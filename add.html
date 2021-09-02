@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/Add.css">
+</head>
+<body>
+    <div id="add-page">
+        <div class="page-container">
+            <form class="form">
+                <input type="text" placeholder="Name" id="beat_name" name="beat_name" required>
+                <input type="text" placeholder="Type" id="beat_type" name=" beat_type" required>
+                <input type="text" placeholder="Bpm" id="beat_tempo" name=" beat_tempo" required>
+                <input type="file" id="image" name="image" onchange="imageConverter()" required>
+                <input type="text" placeholder="Producer" id="producer" name="producer" required>
+                <input type="text" placeholder="Price" id="price" name="price" required>
+                <div class="btn-div">
+                    <button onclick="event.preventDefault(), addProduct()">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <img src="" alt="" class="imageholder">    
+    <script src="./JS/Add.js"></script>
+</body>
+</html>
