@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/Trap.css">
+    <!-- <link rel="stylesheet" href="./CSS/Cart.css"> -->
 </head>
 <body>
     <div id="Home">
@@ -16,15 +17,34 @@
                 <a href="./index.html" class="link-text">Home</a>
               </li>
               <li class="navbar-link">
-                <a href="#" class="link-text">Sign up</a>
+                <a href="./Register.html" class="link-text">Sign up</a>
               </li>
               <li class="navbar-link">
-                <a href="#" class="link-text">Login</a>
+                <a href="./Login.html" class="link-text">Login</a>
               </li>
+
+              <div class="Cart-btn">
+                <button class="btn" onclick="toggleModal('cartModal')">Shopping Cart</button>
+              </div>
             </div>
           </ul>
         </nav>
+
     <div id="container"></div>
+    <div id="cartModal" class="cartModal">
+      <div id="Cart-box">
+        <div class="cartCard">
+          <button id="close" onclick="toggleModal('cartModal')">&times;</button>
+          <div id="beatincart">
+            <div class="cart-head">
+              <div class="cartBeats">Beats</div>
+              <div class="summary">Cart summary</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  
     <script src="./JS/Trap.js"></script>
 </body>
 </html>

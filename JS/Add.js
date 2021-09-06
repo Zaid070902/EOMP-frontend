@@ -24,7 +24,7 @@ function addProduct() {
   let producers = document.getElementById("producer").value;
   let prices = document.getElementById("price").value;
   console.log(name, type, tempo, images, producers, prices);
-  fetch("http://127.0.0.1:5000/create-beat/", {
+  fetch("https://fast-bayou-16865.herokuapp.com/create-beat/", {
     method: 'POST',
     body: JSON.stringify({
       beat_name: name,

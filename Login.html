@@ -31,7 +31,7 @@
 
       <div class="register_items">
         <div class="reg-form">
-          <form action="./index.html" method="POST">
+          <form onsubmit="event.preventDefault(), login()" method="PATCH">
             <div class="form-item">
               <div class="Enter">Username</div>
               <div class="input-head"></div>
@@ -40,11 +40,11 @@
               </div>
             </div>
 
-            <div class="form-item">
+            <div class="form-Loginitem">
               <div class="Enter">Password</div>
               <div class="input-head"></div>
               <div class="input">
-                <input id="Surname" name="password" type="text" />
+                <input id="Password" name="password" type="text" />
               </div>
             </div>
 
@@ -55,5 +55,6 @@
         </div>
       </div>
     </div>
+    <script src="./JS/Login.js"></script>
   </body>
 </html>
