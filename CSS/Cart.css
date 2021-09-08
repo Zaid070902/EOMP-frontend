@@ -1,32 +1,122 @@
-.products{
-    margin: 20px;
-    padding: 20px;
-    color: rgb(200, 200, 200);
-    text-shadow: 2px 2px black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+    font-family: sans-serif;
+}
+
+  .navbar-links {
     display: flex;
+    list-style-type: none;
+    background: rgba(0, 0, 100);
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    transition: all 0.3s linear;
+    font-weight: 200;
+    box-shadow: 0 5px 20px rgb(0, 0, 50);
+    z-index: 100;
+  }
+  
+  .link-text {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+  }
+  
+  .navigate {
+    margin: 50px;
+    display: flex;
+    gap: 30px;
+  }
+
+
+.products{
+  margin: 20px;
+  padding: 20px;
+  color: rgb(200, 200, 200);
+  text-shadow: 2px 2px black;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: black 0 5px 5px;
 }
 
 .details{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
-  .beatBox{
-    margin-top: 5%;
-    border-bottom: 1px solid black;
+.beatBox{
+  margin-top: 5%;
+  border-bottom: 1px solid black;
 }
 
 img{
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
+  box-shadow: rgb(0, 0, 100) 0 5px 5px;
 }
 
 .items{
-    margin: 10px;
+  margin: 10px;
+}
+
+body{
+  background-image: url(/EOMP/frontend/images/Glow\ night\ skyline.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #beatincart{
-    display: flex;
+  display: flex;
+}
+
+.beatside{
+  margin-top: 6%;
+  margin-left: 5%;
+}
+
+.summary{
+  margin-left: 55%;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 5px black;
+  color: rgb(200, 200, 200);
+  height: 300px;
+  width: 500px;
+  position: fixed;
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 2px 2px black;
+  font-size: 20px;
+}
+
+.remove-btn{
+  background-color: rgba(0, 0, 100, 0.2);
+  padding: 10px;
+  border: none;
+  color: rgb(200, 200, 200);
+  font-size: 15px;
+  box-shadow: 0 5px 5px black;
+  text-shadow: 2px 2px black;
+}
+
+.remove-btn:hover{
+  background-color: rgba(0, 0, 100, 0.2);
+  padding: 10px;
+  border: none;
+  color: rgb(200, 200, 200);
+  font-size: 15px;
+  box-shadow: 0 5px 5px rgb(0, 0, 50);
 }

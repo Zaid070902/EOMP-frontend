@@ -10,7 +10,8 @@
 </head>
 <body>
     <div id="Home">
-        <nav class="navbar">
+
+      <nav class="navbar">
           <ul class="navbar-links">
             <div class="navigate">
               <li class="navbar-link">
@@ -23,28 +24,16 @@
                 <a href="./Login.html" class="link-text">Login</a>
               </li>
 
+              <div class="logOut"></div>
+
               <div class="Cart-btn">
-                <button class="btn" onclick="toggleModal('cartModal')">Shopping Cart</button>
+                <a href="./Cart.html"><button class="btn">Shopping Cart</button></a>
               </div>
             </div>
           </ul>
         </nav>
 
-    <div id="container"></div>
-    <div id="cartModal" class="cartModal">
-      <div id="Cart-box">
-        <div class="cartCard">
-          <button id="close" onclick="toggleModal('cartModal')">&times;</button>
-          <div id="beatincart">
-            <div class="cart-head">
-              <div class="cartBeats">Beats</div>
-              <div class="summary">Cart summary</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-  
+    <div id="container"></div>  
     <script src="./JS/Trap.js"></script>
 </body>
 </html>

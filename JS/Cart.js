@@ -26,11 +26,23 @@ cartbeats.forEach((beat) => {
   <div class="details">
   <h3 class="beat_name items">${beat[1]}</h3>
   <h3 class="price items">R${beat[6]}</h3>
+  <div class="removeBtn">
+  <button class="remove-btn" onclick="removeBeat(${beat[0]})">Remove</button>
+  </div>
   </div>
   </div>
   </div>
 `;
 });
 
-let total = JSON.parse(localStorage.getItem('cart').length);
-document.querySelector('.total').innerHTML = `Amount of beats: ${total}`;
+let amount = JSON.parse(localStorage.getItem('cart')).length;
+let sumPrice = JSON.parse(localStorage.getItem('cart')).reduce((total, beat) => total + parseInt(beat[6]), 0);
+document.querySelector('.total').innerHTML = `Amount of beats: ${amount}`;
+document.querySelector('.sum').innerHTML = `Total price: R${sumPrice}`
+
+function removeBeat(id) {
+  let cart = []
+  let beatsOver = cartbeats.filter(item => item[0] != id)
+  localStorage.setItem('cart', JSON.stringify(beatsOver))
+  window.location.reload()
+}

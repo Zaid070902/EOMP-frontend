@@ -17,4 +17,6 @@ function reg() {
   })
     .then((response) => response.json())
     .then((json) => console.log(json));
+    alert('Registered')
+    window.location = './index.html'
 }
