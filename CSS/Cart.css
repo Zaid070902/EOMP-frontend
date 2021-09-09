@@ -120,3 +120,22 @@ body{
   font-size: 15px;
   box-shadow: 0 5px 5px rgb(0, 0, 50);
 }
+
+.check-btn{
+  background-color: rgba(0, 0, 100, 0.2);
+  padding: 10px;
+  border: none;
+  color: rgb(200, 200, 200);
+  font-size: 15px;
+  box-shadow: 0 5px 5px black;
+  text-shadow: 2px 2px black;
+}
+
+.check-btn:hover{
+  background-color: rgba(0, 0, 100, 0.2);
+  padding: 10px;
+  border: none;
+  color: rgb(200, 200, 200);
+  font-size: 15px;
+  box-shadow: 0 5px 5px rgb(0, 0, 50);
+}
