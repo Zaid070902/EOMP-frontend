@@ -2,9 +2,7 @@ let beats = [];
  
 function renderproducts(arry) {
   let beatContainer = document.querySelector("#container");
-  beatContainer.innerHTML = "";
-
-  let isAdmin = user[0].username == "ZaidCrops" && user[0].password == "999" ? true : false
+  beatContainer.innerHTML = "";  
 
   arry.forEach((beat) => {
     beatContainer.innerHTML += `
@@ -18,13 +16,21 @@ function renderproducts(arry) {
       <h3 class="producer items">${beat[5]}</h3>
       <h3 class="price items">R${beat[6]}</h3>
       <div class="addCart-btn">
-      <button type="submit" onclick="addTocart(${beat[0]})">Add to Cart</button>
-      ${ isAdmin ? "<button onclick='deleteBeat(" + beat[0] + ")'>Delete</button>" : null}
+      <button class="thebtn" type="submit" onclick="addTocart(${beat[0]})">Add to Cart</button>
       </div>
+
+      <div class="del-btn"></div>
+
       </div>
       </div>
     </div>
   `;  
+
+  // if(user[0].username == "ZaidCrops" , user[0].password == "999") {
+  //   let del_beat = document.querySelector(".del-btn");
+  //   del_beat.innerHTML = `<button class="delete-btn">Delete</button>`;
+  // }
+
 });
 }
 
@@ -44,12 +50,6 @@ function filterTrap(catergory) {
 
 filterTrap("trap")
 
-let user = JSON.parse(localStorage.getItem('user')) ? JSON.parse(localStorage.getItem('user')) : []
-
-if( user.length == 1) {
-  let addBeat = document.querySelector(".add-link");
-  addBeat.innerHTML = `<a href="./add.html" class="link-text">Add Beat</a>`;
-}
 
 function addTocart(id) {
 
@@ -74,11 +74,17 @@ function addTocart(id) {
   })  
 }
 
+let user = JSON.parse(localStorage.getItem('user')) ? JSON.parse(localStorage.getItem('user')) : []
+
 if(JSON.parse(localStorage.getItem('user')).length > 0) {
   let logout = document.querySelector('.logOut');
   logout.innerHTML = `<button class="logout-btn" onclick="logout()">LOGOUT</button>`;
 }
 
+if(user[0].username == "ZaidCrops" && user[0].password == "999") {
+  let addBeat = document.querySelector(".add-link");
+  addBeat.innerHTML = `<a href="./add.html" class="link-text">Add Beat</a>`;
+}
 
 console.log(JSON.parse(localStorage.getItem('user')).length);
 

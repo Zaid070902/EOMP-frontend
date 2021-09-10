@@ -19,7 +19,8 @@
     font-family: sans-serif;
     transition: all 0.3s linear;
     font-weight: 200;
-    box-shadow: 0 5px 20px rgb(0, 0, 50);
+    box-shadow: 0 5px 20px rgb(0, 0, 255);
+    border-bottom: rgb(200, 200, 200) solid 1px;
   }
   
   .link-text {
@@ -48,6 +49,10 @@
       align-items: center;
       flex-wrap: wrap;
       background-image: url(/EOMP/frontend/images/Glow\ night\ skyline.png);
+      background-image: url(/EOMP/frontend/images/Glow\ night\ skyline.png);
+      background-size: cover;
+      background-attachment: fixed;  
+  
       /* overflow: hidden;
       background-repeat: no-repeat;
       background-size: cover; */
@@ -55,7 +60,7 @@
 
   .beats{
       margin: 20px;
-      box-shadow: 0 5px 5px rgb(0, 0, 100);
+      box-shadow: 0 5px 5px rgb(0, 0, 255);
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.7);
       color: rgb(200, 200, 200);
@@ -80,4 +85,14 @@
   color: rgb(200, 200, 200);
   font-size: 20px;
   text-shadow: 2px 2px black;
+}
+
+.thebtn{
+  background-color: rgba(0, 0, 100, 0.2);
+  padding: 10px;
+  border: none;
+  color: rgb(200, 200, 200);
+  font-size: 15px;
+  box-shadow: 0 5px 5px black;
+  text-shadow: 2px 2px black;  
 }

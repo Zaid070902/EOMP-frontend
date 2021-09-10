@@ -3,6 +3,7 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: sans-serif;
+    /* background-repeat: no-repeat; */
   }
   
   .navbar-links {
@@ -46,6 +47,10 @@
     flex-direction: column;
     align-items: center;
     background-image: url(/EOMP/frontend/images/Glow\ night\ skyline.png);
+    /* background-repeat: no-repeat; */
+    background-image: url(/EOMP/frontend/images/Glow\ night\ skyline.png);
+    background-size: cover;
+    background-attachment: fixed;  
   }
   
   .reg-head {
@@ -95,6 +100,7 @@
   .btn {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
   }
   
   .link {
@@ -108,3 +114,9 @@
       font-weight: 900;
       text-shadow: 2px 2px black;
   }
+
+.reg-form{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  box-shadow: black 0 5px 5px;
+}

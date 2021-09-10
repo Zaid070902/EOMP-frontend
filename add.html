@@ -9,14 +9,59 @@
 </head>
 <body>
     <div id="add-page">
+        <nav class="navbar">
+            <ul class="navbar-links">
+              <div class="navigate">
+                  
+                <li class="add-link"></li>
+                
+                <li class="navbar-link">
+                  <a href="./index.html" class="link-text">Home</a>
+                </li>
+                <li class="navbar-link">
+                  <a href="./Register.html" class="link-text">Sign up</a>
+                </li>
+                <li class="navbar-link">
+                  <a href="./Login.html" class="link-text">Login</a>
+                </li>
+  
+                <div class="logOut"></div>
+  
+              </div>
+            </ul>
+          </nav>
+  
         <div class="page-container">
             <form class="form">
+                <div class="form-item">
+                <div class="input-head">Beat Name</div>
                 <input type="text" placeholder="Name" id="beat_name" name="beat_name" required>
+                </div>
+
+                <div class="form-item">
+                <div class="input-head">Beat Type</div>
                 <input type="text" placeholder="Type" id="beat_type" name=" beat_type" required>
+                </div>
+
+                <div class="form-item">
+                <div class="input-head">Beat Tempo</div>
                 <input type="text" placeholder="Bpm" id="beat_tempo" name=" beat_tempo" required>
+                </div>
+
+                <div class="form-item">
+                <div class="input-head">Beat Image</div>
                 <input type="file" id="image" name="image" onchange="imageConverter()" required>
+                </div>
+
+                <div class="form-item">
+                <div class="input-head">Producer</div>
                 <input type="text" placeholder="Producer" id="producer" name="producer" required>
+                </div>
+
+                <div class="form-item">
+                <div class="input-head">Beat Price</div>
                 <input type="text" placeholder="Price" id="price" name="price" required>
+                </div>
                 <div class="btn-div">
                     <button onclick="event.preventDefault(), addProduct()">Add</button>
                 </div>

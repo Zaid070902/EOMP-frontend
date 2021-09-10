@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(/EOMP/frontend/images/Glow\ night\ skyline.png);
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
+.input-head{
+    color: rgb(200, 200, 200);
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: 2px 2px black;
+}
 
 .page-container{
     display: flex;
@@ -21,8 +33,56 @@
 
 input{
     padding: 10px;
+    width: 500px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+    background: none;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    font-weight: 900;
+    text-shadow: 2px 2px black;
 }
 
 .imageholder{
     display: none;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+    font-family: sans-serif;
+}
+
+  .navbar-links {
+    display: flex;
+    list-style-type: none;
+    background: rgb(0, 0, 100);
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    transition: all 0.3s linear;
+    font-weight: 200;
+    box-shadow: 0 5px 20px rgb(0, 0, 50);
+  }
+  
+  .link-text {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+  }
+  
+  .navigate {
+    margin: 50px;
+    display: flex;
+    gap: 30px;
+  }

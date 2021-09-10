@@ -46,3 +46,10 @@ function removeBeat(id) {
   localStorage.setItem('cart', JSON.stringify(beatsOver))
   window.location.reload()
 }
+
+function checkout() {
+let out = JSON.parse(localStorage.getItem('cart')).length = []
+localStorage.setItem('cart', JSON.stringify(out))
+window.location.reload()
+alert('Beats Checked out')
+}
